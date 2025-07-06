@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Altairon NZR - No Zone Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #0f111a;
+      --container-bg: #1b1e2b;
+      --accent: #ff9900;
+      --primary: #3b82f6;
+      --secondary: #8b5cf6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--main-bg);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      max-width: 220px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .creator-code {
+      background: var(--accent);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .board-container {
+      background: var(--container-bg);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .board-header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .board-header button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .session-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .session-card {
+      background: #262b3a;
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .session-title {
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .session-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .session-buttons a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .leaderboard-btn {
+      background: var(--primary);
+      color: white;
+    }
+
+    .dropmap-btn {
+      background: var(--secondary);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Altairon Logo" />
+    <h1>Altairon No Zone Rules</h1>
+    <div class="creator-code">Kod twórcy: AltaironNZR</div>
+  </header>
+
+  <div class="board-container">
+    <div class="board-header">
+      <button>No Zone Rules</button>
+    </div>
+
+    <div class="session-grid">
+      <div class="session-card">
+        <div class="session-title">Trio Sesja 1</div>
+        <div class="session-buttons">
+          <a href="#" class="leaderboard-btn">Leaderboard</a>
+          <a href="#" class="dropmap-btn">Dropmap</a>
+        </div>
+      </div>
+      <div class="session-card">
+        <div class="session-title">Trio Sesja 2</div>
+        <div class="session-buttons">
+          <a href="#" class="leaderboard-btn">Leaderboard</a>
+          <a href="#" class="dropmap-btn">Dropmap</a>
+        </div>
+      </div>
+      <div class="session-card">
+        <div class="session-title">Trio Sesja 3</div>
+        <div class="session-buttons">
+          <a href="#" class="leaderboard-btn">Leaderboard</a>
+          <a href="#" class="dropmap-btn">Dropmap</a>
+        </div>
+      </div>
+      <!-- Można dodać więcej sesji w tym formacie -->
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Altairon NZR. Wszystkie prawa zastrzeżone.
+  </footer>
+
+</body>
+</html>
